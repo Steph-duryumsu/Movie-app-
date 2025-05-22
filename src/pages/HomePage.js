@@ -42,14 +42,17 @@ const HomePage = () => {
     }
   };
 
-  const genreClass = genreBackgrounds[selectedGenre] || 'bg-white';
+  const genreClass = genreBackgrounds[selectedGenre] || 'bg-gray-800 ';
 
   return (
-    <motion.div className={`min-h-screen ${genreClass} transition-all p-4`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-      <div className="flex justify-between items-center mb-4">
+    <motion.div className={`min-h-screen ${genreClass} transition-all p-4`}
+     initial={{ opacity: 0 }} 
+     animate={{ opacity: 1 }}>
+
+      <div className="flex md:justify-between md:items-center mb-6 gap-4">
         <input
           type="text"
-          className="p-2 border rounded w-full max-w-md"
+          className="p-2 rounded w-full max-w-md bg-slategray "
           placeholder="Search movie..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
