@@ -8,14 +8,14 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // fake login success
+    // fake login success 
     if (email && password) {
       navigate("/homepage");
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-lavender to-blue-200">
+    <div className="h-screen flex flex-col justify-center items-center animate-gradient bg-gradient-to-r from-purple-300 to-blue-400">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-80">
         <h2 className="text-xl font-semibold mb-4 text-center">Login</h2>
         <input
@@ -36,7 +36,7 @@ const Login = () => {
         />
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded "
+          className="w-full bg-purple-600 hover:bg-purple-00 text-white py-2 rounded "
         >
           Login
         </button>

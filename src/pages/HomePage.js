@@ -52,7 +52,7 @@ const HomePage = () => {
       <div className="flex md:justify-between md:items-center mb-6 gap-4">
         <input
           type="text"
-          className="p-2 rounded w-full max-w-md bg-slategray "
+          className="p-2 rounded w-full max-w-md bg-slategray text-white"
           placeholder="Search movie..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
